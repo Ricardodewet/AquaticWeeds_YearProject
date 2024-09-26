@@ -1,0 +1,9 @@
+This file should contain historical environmental data such as temperature, wind speed, and humidity.
+Example CSV structure:
+
+
+date,temperature,wind_speed,humidity
+
+2023-01-01,25.5,5.4,60
+2023-01-02,26.1,4.9,63
+2023-01-03,24.8,6.1,59
