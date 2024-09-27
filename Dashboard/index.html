@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Hyacinth Prediction Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Water Hyacinth Predictions</h1>
+    </header>
+    <main class="dashboard">
+        <!-- Prediction section -->
+        <section class="prediction-section">
+            <div class="prediction-output">
+                <canvas id="damCanvas" width="400" height="300"></canvas>
+                <div class="legend">
+                    <p><span class="color-box blue"></span>Dam</p>
+                    <p><span class="color-box green"></span>Current Hyacinth Position</p>
+                    <p><span class="color-box purple"></span>Predicted Hyacinth Position</p>
+                </div>
+                <p class="time-display">08:30 - 05/09/2024</p>
+            </div>
+            <div class="controls">
+                <form id="timeForm">
+                    <label for="predictionDate">Change Date of Prediction:</label><br>
+                    <input type="date" id="predictionDate" name="predictionDate"><br>
+                    <label for="predictionTime">Change Time of Prediction:</label><br>
+                    <input type="time" id="predictionTime" name="predictionTime"><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Status section -->
+        <section class="status-section">
+            <div class="panel growth">
+                <h3>Water Hyacinth Coverage:</h3>
+                <p id="growth-value" class="value">6% Decrease</p>
+            </div>
+            <div class="panel wind">
+                <h3>Wind Speed and Direction:</h3>
+                <p><span id="wind-speed" class="value">7m/s</span>, <span id="wind-direction" class="value">NW</span></p>
+            </div>
+            <div class="panel water-level">
+                <h3>Dam Water Level:</h3>
+                <p id="water-level" class="value">89.5 million m³</p>
+            </div>
+            <div class="panel movement">
+                <h3>Movement Activity:</h3>
+                <p id="movement-status" class="value high">HIGH</p>
+            </div>
+            <div class="panel flood-gates">
+                <h3>Flood Gates Status:</h3>
+                <p id="flood-gates-status" class="value closed">CLOSED</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
