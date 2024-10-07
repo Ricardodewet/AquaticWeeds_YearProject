@@ -1,5 +1,7 @@
-tensorflow
-numpy
-pandas
-matplotlib
-scikit-learn
+pip install tensorflow opencv-python gps dronekit
+
+pip install pymavlink
+
+pip install opencv-python
+
+pip install Pillow
